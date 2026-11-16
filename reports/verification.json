@@ -1,0 +1,43 @@
+{
+  "verified_at": "2026-11-16T15:08:29.220919+00:00",
+  "implementation_commit": "e0ad17507c4f0a69668647e33005a4c64aa09d6b",
+  "url": "https://creator-campaign-evidence-desk-1038659864130.us-central1.run.app",
+  "service": {
+    "status": {
+      "latestReadyRevisionName": "creator-campaign-evidence-desk-00002-97t",
+      "traffic": [
+        {
+          "latestRevision": true,
+          "percent": 100,
+          "revisionName": "creator-campaign-evidence-desk-00002-97t"
+        }
+      ],
+      "url": "https://creator-campaign-evidence-desk-nlwuhul3iq-uc.a.run.app"
+    }
+  },
+  "static_assets_match_source": {
+    "/": {
+      "status": 200,
+      "sha256": "12f1ceccb01b865be4b6baf5170986790a8306550b6fec7df33b195f17c0f547"
+    },
+    "/static/app.js": {
+      "status": 200,
+      "sha256": "1e58948b500ca702769954449b91eb23e8820f539928559e6672fa56b4e732cf"
+    },
+    "/static/style.css": {
+      "status": 200,
+      "sha256": "ad62ea033aaf04589ccd85143754551d30dfd090608e2bd759170be7c42b3406"
+    },
+    "/static/favicon.svg": {
+      "status": 200,
+      "sha256": "8db7c2838edf2c7780850739bd590bb38c1fcd6418011aaff6051b8d9565ed1c"
+    }
+  },
+  "catalog_matches_source": true,
+  "durable_review_from_previous_revision_confirmed": true,
+  "automated_tests_passed": 12,
+  "live_evaluation_cases": 4,
+  "cloud_browser_workflow": "reports/cloud-browser-smoke.json",
+  "local_browser_workflow": "reports/local-browser-smoke.json",
+  "scope": "Static source parity checked on revision 2. Full real-model browser workflow verified on revision 1; agent/review logic unchanged. Revision 2 adds malformed metadata handling and copy/font/favicon fixes."
+}
