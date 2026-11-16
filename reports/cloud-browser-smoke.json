@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-16T15:02:56.175020+00:00",
+  "url": "https://creator-campaign-evidence-desk-1038659864130.us-central1.run.app",
+  "real_model": "google/gemini-3.8-flash",
+  "run_id": "e0e0ec60a3d04e818eba68e5852c0f5c",
+  "run_seconds": 16.9,
+  "saved_example_labeled": true,
+  "campaign_switch": true,
+  "live_run": true,
+  "review_persisted_after_reload": true,
+  "other_visitor_http_status": 404,
+  "desktop_overflow": false,
+  "mobile_overflow": false,
+  "page_errors": [],
+  "live_metadata_http_statuses": [
+    200,
+    404
+  ],
+  "tool_calls": [
+    "read_campaign",
+    "list_public_content",
+    "read_data_limits",
+    "refresh_public_metadata"
+  ]
+}

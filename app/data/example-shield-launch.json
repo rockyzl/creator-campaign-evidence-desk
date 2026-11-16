@@ -1,0 +1,255 @@
+{
+  "id": "76ed352c1bc44f2db16d8d8acaecf8b6",
+  "campaign_id": "shield-launch",
+  "question": "Who published the linked videos? Separate the NVIDIA brand channel from other publishers and explain what the records can verify. Refresh the metadata first.",
+  "created_at": "2026-11-16T14:56:29.048018+00:00",
+  "status": "awaiting_review",
+  "report": {
+    "headline": "Public Metadata Identifies Brand Channel and Four External Creators",
+    "answer": "Live metadata returned HTTP 200 for all five embedded videos. One video was published directly by the NVIDIA brand channel, while the other four were published by external channels: Life of Tom, Techquickie, Achievement Hunter, and Austin Evans. These records verify public oEmbed metadata availability, publisher names, and video titles. They do not confirm video playback, video content, sponsorship status, or contractual delivery.",
+    "findings": [
+      {
+        "title": "NVIDIA Brand Channel Publisher",
+        "detail": "Video yZcQNb8_j0s returned publisher 'NVIDIA' under HTTP 200 at 2026-11-16T14:56:16.414520+00:00. This confirms publication by the brand's own YouTube channel rather than a third-party creator.",
+        "kind": "verified",
+        "evidence_ids": [
+          "metadata:yZcQNb8_j0s",
+          "brief"
+        ]
+      },
+      {
+        "title": "External Creator Publishers",
+        "detail": "Four videos returned third-party creator publisher names: 'Life of Tom' (3D9aNJSoCus), 'Techquickie' (3KrImPgy3BI), 'Achievement Hunter' (IP6CU_gDa4g), and 'Austin Evans' (qFYoz-ginj8), all confirmed live at HTTP 200.",
+        "kind": "verified",
+        "evidence_ids": [
+          "metadata:3D9aNJSoCus",
+          "metadata:3KrImPgy3BI",
+          "metadata:IP6CU_gDa4g",
+          "metadata:qFYoz-ginj8"
+        ]
+      },
+      {
+        "title": "Verification Limits of Metadata Records",
+        "detail": "An HTTP 200 oEmbed response confirms only that title and author metadata were returned. It does not verify video playback, content quality, sponsorship agreements, creator fees, or contractual delivery.",
+        "kind": "limitation",
+        "evidence_ids": [
+          "limits",
+          "brief"
+        ]
+      }
+    ],
+    "next_step": "A team member should manually review the embedded videos and internal contracts to confirm campaign sponsorship agreements and actual video content."
+  },
+  "checks": {
+    "passed": true,
+    "problems": [],
+    "model_assessment": {
+      "supported": true,
+      "problems": []
+    },
+    "method": "Citation ID validation + separate model evidence assessment; human review is still required."
+  },
+  "evidence": [
+    {
+      "id": "brief",
+      "text": "NeoReach describes a Shield launch campaign with technology and gaming creators, Twitch streams, reviews and giveaways. Its public case page embeds selected YouTube content. A video embedded on the page may be posted by a creator or the NVIDIA brand channel; it is not proof of a paid contract.",
+      "source_url": "https://neoreach.com/case-studies/nvidia/",
+      "captured_at": "2026-11-16"
+    },
+    {
+      "id": "limits",
+      "text": "This collection contains a public campaign brief and page-linked YouTube content. It has no contracts, deadlines, creator fees, payments, orders, conversions, audience demographics or private campaign analytics. YouTube oEmbed provides title and publisher metadata, not views or sales. HTTP 200 verifies a metadata response only, not playback, content quality, sponsorship or contractual delivery. HTTP 404 or a request error means metadata was not verified in this check, not proof of deletion, non-delivery or wrongdoing. A page embed is a source-listed association, not a complete roster or proof of a paid partnership. Publishers may be brand channels. Historical campaign totals cannot be recalculated from current oEmbed metadata. Display names alone do not establish identity across platforms.",
+      "source_url": "https://developers.google.com/youtube/data/reference/rest/v3/videos/list"
+    },
+    {
+      "id": "metadata:3D9aNJSoCus",
+      "text": "Video 3D9aNJSoCus: YouTube returned publisher 'Life of Tom' and title 'I F*CKING GOT IT!!!'. HTTP status: 200. Observation: live. Checked at 2026-11-16T14:56:16.093118+00:00.",
+      "source_url": "https://www.youtube.com/watch?v=3D9aNJSoCus",
+      "record": {
+        "video_id": "3D9aNJSoCus",
+        "title": "I F*CKING GOT IT!!!",
+        "author_name": "Life of Tom",
+        "author_url": "https://www.youtube.com/@LifeOfTom",
+        "http_status": 200,
+        "checked_at": "2026-11-16T14:56:16.093118+00:00",
+        "observation_type": "live",
+        "source_url": "https://neoreach.com/case-studies/nvidia/"
+      }
+    },
+    {
+      "id": "metadata:3KrImPgy3BI",
+      "text": "Video 3KrImPgy3BI: YouTube returned publisher 'Techquickie' and title 'Game Streaming As Fast As Possible'. HTTP status: 200. Observation: live. Checked at 2026-11-16T14:56:16.100412+00:00.",
+      "source_url": "https://www.youtube.com/watch?v=3KrImPgy3BI",
+      "record": {
+        "video_id": "3KrImPgy3BI",
+        "title": "Game Streaming As Fast As Possible",
+        "author_name": "Techquickie",
+        "author_url": "https://www.youtube.com/@techquickie",
+        "http_status": 200,
+        "checked_at": "2026-11-16T14:56:16.100412+00:00",
+        "observation_type": "live",
+        "source_url": "https://neoreach.com/case-studies/nvidia/"
+      }
+    },
+    {
+      "id": "metadata:IP6CU_gDa4g",
+      "text": "Video IP6CU_gDa4g: YouTube returned publisher 'Achievement Hunter' and title 'Dead Crickets \u2013 AHWU for October 5th, 2015 (#285)'. HTTP status: 200. Observation: live. Checked at 2026-11-16T14:56:16.108975+00:00.",
+      "source_url": "https://www.youtube.com/watch?v=IP6CU_gDa4g",
+      "record": {
+        "video_id": "IP6CU_gDa4g",
+        "title": "Dead Crickets \u2013 AHWU for October 5th, 2015 (#285)",
+        "author_name": "Achievement Hunter",
+        "author_url": "https://www.youtube.com/@AchievementHunter",
+        "http_status": 200,
+        "checked_at": "2026-11-16T14:56:16.108975+00:00",
+        "observation_type": "live",
+        "source_url": "https://neoreach.com/case-studies/nvidia/"
+      }
+    },
+    {
+      "id": "metadata:qFYoz-ginj8",
+      "text": "Video qFYoz-ginj8: YouTube returned publisher 'Austin Evans' and title 'What's The Best Streaming Device?'. HTTP status: 200. Observation: live. Checked at 2026-11-16T14:56:16.109429+00:00.",
+      "source_url": "https://www.youtube.com/watch?v=qFYoz-ginj8",
+      "record": {
+        "video_id": "qFYoz-ginj8",
+        "title": "What's The Best Streaming Device?",
+        "author_name": "Austin Evans",
+        "author_url": "https://www.youtube.com/@austinevans",
+        "http_status": 200,
+        "checked_at": "2026-11-16T14:56:16.109429+00:00",
+        "observation_type": "live",
+        "source_url": "https://neoreach.com/case-studies/nvidia/"
+      }
+    },
+    {
+      "id": "metadata:yZcQNb8_j0s",
+      "text": "Video yZcQNb8_j0s: YouTube returned publisher 'NVIDIA' and title 'RULE THE LIVING ROOM FROM 10,000 FEET WITH NVIDIA SHIELD'. HTTP status: 200. Observation: live. Checked at 2026-11-16T14:56:16.414520+00:00.",
+      "source_url": "https://www.youtube.com/watch?v=yZcQNb8_j0s",
+      "record": {
+        "video_id": "yZcQNb8_j0s",
+        "title": "RULE THE LIVING ROOM FROM 10,000 FEET WITH NVIDIA SHIELD",
+        "author_name": "NVIDIA",
+        "author_url": "https://www.youtube.com/@NVIDIA",
+        "http_status": 200,
+        "checked_at": "2026-11-16T14:56:16.414520+00:00",
+        "observation_type": "live",
+        "source_url": "https://neoreach.com/case-studies/nvidia/"
+      }
+    }
+  ],
+  "trace": [
+    {
+      "tool": "read_campaign",
+      "arguments": {},
+      "evidence_ids": [
+        "brief"
+      ],
+      "at": "2026-11-16T14:56:16.091938+00:00"
+    },
+    {
+      "tool": "list_public_content",
+      "arguments": {},
+      "evidence_ids": [
+        "metadata:3D9aNJSoCus",
+        "metadata:3KrImPgy3BI",
+        "metadata:IP6CU_gDa4g",
+        "metadata:qFYoz-ginj8",
+        "metadata:yZcQNb8_j0s"
+      ],
+      "at": "2026-11-16T14:56:16.092173+00:00"
+    },
+    {
+      "tool": "read_data_limits",
+      "arguments": {},
+      "evidence_ids": [
+        "limits"
+      ],
+      "at": "2026-11-16T14:56:16.092220+00:00"
+    },
+    {
+      "tool": "refresh_public_metadata",
+      "arguments": {},
+      "evidence_ids": [
+        "metadata:3D9aNJSoCus",
+        "metadata:3KrImPgy3BI",
+        "metadata:IP6CU_gDa4g",
+        "metadata:qFYoz-ginj8",
+        "metadata:yZcQNb8_j0s"
+      ],
+      "at": "2026-11-16T14:56:17.015349+00:00"
+    }
+  ],
+  "observations": [
+    {
+      "video_id": "3D9aNJSoCus",
+      "title": "I F*CKING GOT IT!!!",
+      "author_name": "Life of Tom",
+      "author_url": "https://www.youtube.com/@LifeOfTom",
+      "http_status": 200,
+      "checked_at": "2026-11-16T14:56:16.093118+00:00",
+      "observation_type": "live",
+      "source_url": "https://neoreach.com/case-studies/nvidia/"
+    },
+    {
+      "video_id": "3KrImPgy3BI",
+      "title": "Game Streaming As Fast As Possible",
+      "author_name": "Techquickie",
+      "author_url": "https://www.youtube.com/@techquickie",
+      "http_status": 200,
+      "checked_at": "2026-11-16T14:56:16.100412+00:00",
+      "observation_type": "live",
+      "source_url": "https://neoreach.com/case-studies/nvidia/"
+    },
+    {
+      "video_id": "IP6CU_gDa4g",
+      "title": "Dead Crickets \u2013 AHWU for October 5th, 2015 (#285)",
+      "author_name": "Achievement Hunter",
+      "author_url": "https://www.youtube.com/@AchievementHunter",
+      "http_status": 200,
+      "checked_at": "2026-11-16T14:56:16.108975+00:00",
+      "observation_type": "live",
+      "source_url": "https://neoreach.com/case-studies/nvidia/"
+    },
+    {
+      "video_id": "qFYoz-ginj8",
+      "title": "What's The Best Streaming Device?",
+      "author_name": "Austin Evans",
+      "author_url": "https://www.youtube.com/@austinevans",
+      "http_status": 200,
+      "checked_at": "2026-11-16T14:56:16.109429+00:00",
+      "observation_type": "live",
+      "source_url": "https://neoreach.com/case-studies/nvidia/"
+    },
+    {
+      "video_id": "yZcQNb8_j0s",
+      "title": "RULE THE LIVING ROOM FROM 10,000 FEET WITH NVIDIA SHIELD",
+      "author_name": "NVIDIA",
+      "author_url": "https://www.youtube.com/@NVIDIA",
+      "http_status": 200,
+      "checked_at": "2026-11-16T14:56:16.414520+00:00",
+      "observation_type": "live",
+      "source_url": "https://neoreach.com/case-studies/nvidia/"
+    }
+  ],
+  "live_refresh": true,
+  "model": "google/gemini-3.8-flash",
+  "usage": [
+    {
+      "input_tokens": 816,
+      "output_tokens": 46,
+      "seconds": 1.998
+    },
+    {
+      "input_tokens": 3909,
+      "output_tokens": 471,
+      "seconds": 4.185
+    },
+    {
+      "input_tokens": 2367,
+      "output_tokens": 10,
+      "seconds": 7.835
+    }
+  ],
+  "seconds": 14.96,
+  "review": null
+}

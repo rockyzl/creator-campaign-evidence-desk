@@ -1,0 +1,169 @@
+{
+  "id": "7591468bb90446c88b056641de51c6fe",
+  "campaign_id": "rtx-students",
+  "question": "Which public videos can we verify for this campaign, and what needs a human follow-up?",
+  "created_at": "2026-11-16T14:56:14.037680+00:00",
+  "status": "awaiting_review",
+  "report": {
+    "headline": "One public video verified via metadata; one video requires human follow-up",
+    "answer": "Live metadata checks verified one public video (aEtydqH9_Og) with publisher 'Danny Lum' and title 'NVIDIA TikTok Rev 2' via HTTP 200. A second linked video (jik095KZn3s) returned HTTP 404, meaning public metadata could not be verified. Under operational limits, HTTP 200 confirms metadata availability only and does not verify video playback, content quality, sponsorship, or delivery. Similarly, HTTP 404 is not proof of deletion or non-delivery. A human reviewer must manually inspect both URLs and cross-reference campaign agreements.",
+    "findings": [
+      {
+        "title": "Public metadata verified for video aEtydqH9_Og",
+        "detail": "A live check at 2026-11-16T14:56:00.025044+00:00 returned HTTP 200 with title 'NVIDIA TikTok Rev 2' and author 'Danny Lum'. This confirms public metadata availability.",
+        "kind": "verified",
+        "evidence_ids": [
+          "metadata:aEtydqH9_Og"
+        ]
+      },
+      {
+        "title": "Metadata unverified for video jik095KZn3s",
+        "detail": "A live check at 2026-11-16T14:56:00.036531+00:00 returned HTTP 404. Public metadata was not verified, requiring human review to check link status.",
+        "kind": "follow_up",
+        "evidence_ids": [
+          "check:jik095KZn3s"
+        ]
+      },
+      {
+        "title": "Metadata check limitations",
+        "detail": "HTTP 200 confirms only that metadata was returned, not playback, content, or contractual compliance. HTTP 404 does not prove video deletion or non-delivery.",
+        "kind": "limitation",
+        "evidence_ids": [
+          "limits"
+        ]
+      }
+    ],
+    "next_step": "A team member should manually review the YouTube URL for video jik095KZn3s and check campaign records to confirm delivery status."
+  },
+  "checks": {
+    "passed": true,
+    "problems": [],
+    "model_assessment": {
+      "supported": true,
+      "problems": []
+    },
+    "method": "Citation ID validation + separate model evidence assessment; human review is still required."
+  },
+  "evidence": [
+    {
+      "id": "brief",
+      "text": "NeoReach describes a campaign promoting GeForce RTX 30 Series laptops to American STEM students. Creators showed science and engineering projects using the laptops. The public case page includes selected content and names creators; it does not disclose individual contracts or campaign deadlines.",
+      "source_url": "https://neoreach.com/case-studies/nvidia-2/",
+      "captured_at": "2026-11-16"
+    },
+    {
+      "id": "limits",
+      "text": "This collection contains a public campaign brief and page-linked YouTube content. It has no contracts, deadlines, creator fees, payments, orders, conversions, audience demographics or private campaign analytics. YouTube oEmbed provides title and publisher metadata, not views or sales. HTTP 200 verifies a metadata response only, not playback, content quality, sponsorship or contractual delivery. HTTP 404 or a request error means metadata was not verified in this check, not proof of deletion, non-delivery or wrongdoing. A page embed is a source-listed association, not a complete roster or proof of a paid partnership. Publishers may be brand channels. Historical campaign totals cannot be recalculated from current oEmbed metadata. Display names alone do not establish identity across platforms.",
+      "source_url": "https://developers.google.com/youtube/data/reference/rest/v3/videos/list"
+    },
+    {
+      "id": "metadata:aEtydqH9_Og",
+      "text": "Video aEtydqH9_Og: YouTube returned publisher 'Danny Lum' and title 'NVIDIA TikTok Rev 2'. HTTP status: 200. Observation: live. Checked at 2026-11-16T14:56:00.025044+00:00.",
+      "source_url": "https://www.youtube.com/watch?v=aEtydqH9_Og",
+      "record": {
+        "video_id": "aEtydqH9_Og",
+        "title": "NVIDIA TikTok Rev 2",
+        "author_name": "Danny Lum",
+        "author_url": "https://www.youtube.com/@dannylumcreative",
+        "http_status": 200,
+        "checked_at": "2026-11-16T14:56:00.025044+00:00",
+        "observation_type": "live",
+        "source_url": "https://neoreach.com/case-studies/nvidia-2/"
+      }
+    },
+    {
+      "id": "check:jik095KZn3s",
+      "text": "Video jik095KZn3s: Public metadata was not verified. HTTP status: 404. Observation: live. Checked at 2026-11-16T14:56:00.036531+00:00.",
+      "source_url": "https://www.youtube.com/watch?v=jik095KZn3s",
+      "record": {
+        "video_id": "jik095KZn3s",
+        "title": null,
+        "author_name": null,
+        "author_url": null,
+        "http_status": 404,
+        "checked_at": "2026-11-16T14:56:00.036531+00:00",
+        "observation_type": "live",
+        "source_url": "https://neoreach.com/case-studies/nvidia-2/"
+      }
+    }
+  ],
+  "trace": [
+    {
+      "tool": "read_campaign",
+      "arguments": {},
+      "evidence_ids": [
+        "brief"
+      ],
+      "at": "2026-11-16T14:56:00.023353+00:00"
+    },
+    {
+      "tool": "list_public_content",
+      "arguments": {},
+      "evidence_ids": [
+        "metadata:aEtydqH9_Og",
+        "check:jik095KZn3s"
+      ],
+      "at": "2026-11-16T14:56:00.023645+00:00"
+    },
+    {
+      "tool": "read_data_limits",
+      "arguments": {},
+      "evidence_ids": [
+        "limits"
+      ],
+      "at": "2026-11-16T14:56:00.023684+00:00"
+    },
+    {
+      "tool": "refresh_public_metadata",
+      "arguments": {},
+      "evidence_ids": [
+        "metadata:aEtydqH9_Og",
+        "check:jik095KZn3s"
+      ],
+      "at": "2026-11-16T14:56:00.793178+00:00"
+    }
+  ],
+  "observations": [
+    {
+      "video_id": "aEtydqH9_Og",
+      "title": "NVIDIA TikTok Rev 2",
+      "author_name": "Danny Lum",
+      "author_url": "https://www.youtube.com/@dannylumcreative",
+      "http_status": 200,
+      "checked_at": "2026-11-16T14:56:00.025044+00:00",
+      "observation_type": "live",
+      "source_url": "https://neoreach.com/case-studies/nvidia-2/"
+    },
+    {
+      "video_id": "jik095KZn3s",
+      "title": null,
+      "author_name": null,
+      "author_url": null,
+      "http_status": 404,
+      "checked_at": "2026-11-16T14:56:00.036531+00:00",
+      "observation_type": "live",
+      "source_url": "https://neoreach.com/case-studies/nvidia-2/"
+    }
+  ],
+  "live_refresh": true,
+  "model": "google/gemini-3.8-flash",
+  "usage": [
+    {
+      "input_tokens": 808,
+      "output_tokens": 46,
+      "seconds": 4.862
+    },
+    {
+      "input_tokens": 2152,
+      "output_tokens": 471,
+      "seconds": 14.932
+    },
+    {
+      "input_tokens": 1496,
+      "output_tokens": 16,
+      "seconds": 1.619
+    }
+  ],
+  "seconds": 22.22,
+  "review": null
+}

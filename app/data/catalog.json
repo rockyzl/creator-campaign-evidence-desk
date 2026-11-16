@@ -1,0 +1,105 @@
+{
+  "campaigns": [
+    {
+      "id": "rtx-students",
+      "title": "NVIDIA \u00b7 Back to school",
+      "subtitle": "Creator-led science & engineering projects",
+      "brand": "NVIDIA",
+      "source_url": "https://neoreach.com/case-studies/nvidia-2/",
+      "captured_at": "2026-11-16",
+      "brief": "NeoReach describes a campaign promoting GeForce RTX 30 Series laptops to American STEM students. Creators showed science and engineering projects using the laptops. The public case page includes selected content and names creators; it does not disclose individual contracts or campaign deadlines.",
+      "question": "Which public videos can we verify for this campaign, and what needs a human follow-up?",
+      "ui_summary": "NVIDIA wanted to reach STEM students. NeoReach worked with creators who demonstrated science and engineering projects on GeForce RTX laptops."
+    },
+    {
+      "id": "shield-launch",
+      "title": "NVIDIA \u00b7 Shield launch",
+      "subtitle": "Tech reviews, gaming & launch content",
+      "brand": "NVIDIA",
+      "source_url": "https://neoreach.com/case-studies/nvidia/",
+      "captured_at": "2026-11-16",
+      "brief": "NeoReach describes a Shield launch campaign with technology and gaming creators, Twitch streams, reviews and giveaways. Its public case page embeds selected YouTube content. A video embedded on the page may be posted by a creator or the NVIDIA brand channel; it is not proof of a paid contract.",
+      "question": "Who published the videos in this campaign? Separate the brand channel from other publishers and explain what we can verify.",
+      "ui_summary": "NeoReach brought together tech reviews, gaming streams and giveaways for the NVIDIA Shield launch. The public case page links to selected videos."
+    }
+  ],
+  "videos": [
+    {
+      "campaign_id": "rtx-students",
+      "video_id": "aEtydqH9_Og",
+      "title": "NVIDIA TikTok Rev 2",
+      "author_name": "Danny Lum",
+      "author_url": "https://www.youtube.com/@dannylumcreative",
+      "http_status": 200,
+      "checked_at": "2026-11-16T13:48:53.815794+00:00",
+      "observation_type": "research_snapshot",
+      "source_url": "https://neoreach.com/case-studies/nvidia-2/"
+    },
+    {
+      "campaign_id": "rtx-students",
+      "video_id": "jik095KZn3s",
+      "title": null,
+      "author_name": null,
+      "author_url": null,
+      "http_status": 404,
+      "checked_at": "2026-11-16T13:48:53.815794+00:00",
+      "observation_type": "research_snapshot",
+      "source_url": "https://neoreach.com/case-studies/nvidia-2/"
+    },
+    {
+      "campaign_id": "shield-launch",
+      "video_id": "yZcQNb8_j0s",
+      "title": "RULE THE LIVING ROOM FROM 10,000 FEET WITH NVIDIA SHIELD",
+      "author_name": "NVIDIA",
+      "author_url": "https://www.youtube.com/@NVIDIA",
+      "http_status": 200,
+      "checked_at": "2026-11-16T13:48:53.815794+00:00",
+      "observation_type": "research_snapshot",
+      "source_url": "https://neoreach.com/case-studies/nvidia/"
+    },
+    {
+      "campaign_id": "shield-launch",
+      "video_id": "3KrImPgy3BI",
+      "title": "Game Streaming As Fast As Possible",
+      "author_name": "Techquickie",
+      "author_url": "https://www.youtube.com/@techquickie",
+      "http_status": 200,
+      "checked_at": "2026-11-16T13:48:53.815794+00:00",
+      "observation_type": "research_snapshot",
+      "source_url": "https://neoreach.com/case-studies/nvidia/"
+    },
+    {
+      "campaign_id": "shield-launch",
+      "video_id": "qFYoz-ginj8",
+      "title": "What's The Best Streaming Device?",
+      "author_name": "Austin Evans",
+      "author_url": "https://www.youtube.com/@austinevans",
+      "http_status": 200,
+      "checked_at": "2026-11-16T13:48:53.815794+00:00",
+      "observation_type": "research_snapshot",
+      "source_url": "https://neoreach.com/case-studies/nvidia/"
+    },
+    {
+      "campaign_id": "shield-launch",
+      "video_id": "IP6CU_gDa4g",
+      "title": "Dead Crickets \u2013 AHWU for October 5th, 2015 (#285)",
+      "author_name": "Achievement Hunter",
+      "author_url": "https://www.youtube.com/@AchievementHunter",
+      "http_status": 200,
+      "checked_at": "2026-11-16T13:48:53.815794+00:00",
+      "observation_type": "research_snapshot",
+      "source_url": "https://neoreach.com/case-studies/nvidia/"
+    },
+    {
+      "campaign_id": "shield-launch",
+      "video_id": "3D9aNJSoCus",
+      "title": "I F*CKING GOT IT!!!",
+      "author_name": "Life of Tom",
+      "author_url": "https://www.youtube.com/@LifeOfTom",
+      "http_status": 200,
+      "checked_at": "2026-11-16T13:48:53.815794+00:00",
+      "observation_type": "research_snapshot",
+      "source_url": "https://neoreach.com/case-studies/nvidia/"
+    }
+  ]
+}

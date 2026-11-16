@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-11-16T15:03:25.924948+00:00",
+  "url": "http://127.0.0.1:8194",
+  "real_model": "google/gemini-3.8-flash",
+  "run_id": "031e09f9520c4317a36a63a4968a27f3",
+  "run_seconds": 118.25,
+  "saved_example_labeled": true,
+  "campaign_switch": true,
+  "live_run": true,
+  "review_persisted_after_reload": true,
+  "other_visitor_http_status": 404,
+  "desktop_overflow": false,
+  "mobile_overflow": false,
+  "page_errors": [],
+  "live_metadata_http_statuses": [
+    200,
+    404
+  ],
+  "tool_calls": [
+    "read_campaign",
+    "list_public_content",
+    "read_data_limits",
+    "refresh_public_metadata"
+  ]
+}

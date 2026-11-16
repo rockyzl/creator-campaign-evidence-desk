@@ -1,0 +1,76 @@
+{
+  "provider": "vertex",
+  "cases": [
+    {
+      "case": "availability",
+      "campaign_id": "rtx-students",
+      "run_id": "7591468bb90446c88b056641de51c6fe",
+      "checks_passed": true,
+      "seconds": 22.22,
+      "tool_calls": [
+        "read_campaign",
+        "list_public_content",
+        "read_data_limits",
+        "refresh_public_metadata"
+      ],
+      "status": "awaiting_review",
+      "tokens": {
+        "input_tokens": 4456,
+        "output_tokens": 533
+      }
+    },
+    {
+      "case": "publishers",
+      "campaign_id": "shield-launch",
+      "run_id": "76ed352c1bc44f2db16d8d8acaecf8b6",
+      "checks_passed": true,
+      "seconds": 14.96,
+      "tool_calls": [
+        "read_campaign",
+        "list_public_content",
+        "read_data_limits",
+        "refresh_public_metadata"
+      ],
+      "status": "awaiting_review",
+      "tokens": {
+        "input_tokens": 7092,
+        "output_tokens": 527
+      }
+    },
+    {
+      "case": "sales",
+      "campaign_id": "rtx-students",
+      "run_id": "28ac5b575d1749ca8f84f7957623e022",
+      "checks_passed": true,
+      "seconds": 9.44,
+      "tool_calls": [
+        "read_campaign",
+        "list_public_content",
+        "read_data_limits"
+      ],
+      "status": "awaiting_review",
+      "tokens": {
+        "input_tokens": 3748,
+        "output_tokens": 296
+      }
+    },
+    {
+      "case": "unsupported_demand",
+      "campaign_id": "rtx-students",
+      "run_id": "92723c6f21e24dd2a69878b715ea6a91",
+      "checks_passed": true,
+      "seconds": 7.77,
+      "tool_calls": [
+        "read_campaign",
+        "list_public_content",
+        "read_data_limits"
+      ],
+      "status": "awaiting_review",
+      "tokens": {
+        "input_tokens": 3817,
+        "output_tokens": 357
+      }
+    }
+  ],
+  "scope": "Four bounded live runs, not a statistical accuracy benchmark. Inspect full reports for semantic quality."
+}

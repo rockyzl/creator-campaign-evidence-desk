@@ -1,0 +1,13 @@
+[project]
+name = "creator-campaign-evidence-desk"
+version = "0.1.0"
+description = "Public campaign evidence, live content checks, and a reviewed agent report"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115,<1", "uvicorn[standard]>=0.30,<1", "pydantic>=2.9,<3", "httpx>=0.27,<1", "openai>=1.60,<3", "langgraph>=0.2,<2", "google-auth>=2.29,<3", "google-cloud-storage>=2.18,<4", "requests>=2.31,<3"]
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "playwright>=1.49,<2"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

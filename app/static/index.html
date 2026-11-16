@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore real public NVIDIA campaign content, run an evidence-based AI check, and review the report.">
+  <title>Campaign Desk — Creator evidence, checked</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css"><script defer src="/static/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#workspace">Skip to workspace</a>
+  <header class="site-header"><a class="wordmark" href="/" aria-label="Campaign Desk home"><span class="mark">c<span>↗</span></span>campaign desk<span class="wordmark-dot">.</span></a><span class="project-label">An independent project by Lu Zhang</span><a href="https://github.com/rockyzl/creator-campaign-evidence-desk" target="_blank" rel="noopener noreferrer" class="repo-link">View code ↗</a></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">CREATOR OPERATIONS / PUBLIC EVIDENCE</p><h1>Know what’s there.<br><span>See what needs a look.</span></h1></div><p class="intro-copy">Real campaigns. Real content links. <br>Let an agent check the records, <br>then make the final call yourself.</p></section>
+    <ol class="steps" aria-label="How to use this demo"><li><span>1</span>Choose a campaign</li><li><span>2</span>Run an evidence check</li><li><span>3</span>Review the report</li></ol>
+    <div class="workspace" id="workspace">
+      <section class="source-column" aria-label="Campaigns and public content">
+        <div class="section-label"><h2>Start with a real campaign</h2><span>Source: NeoReach case studies</span></div>
+        <div id="campaigns" class="campaigns"></div>
+        <div class="brief"><p id="brief-text"></p><a id="case-link" href="#" target="_blank" rel="noopener noreferrer">Read the original case study ↗</a></div>
+        <div class="section-label content-heading"><h2>Public content</h2><span id="content-count"></span></div>
+        <p class="source-caption" id="data-time">Loading source records…</p>
+        <div id="content-list" class="content-list" aria-live="polite"></div>
+        <p class="scope-note">These are selected links from the public case page. A metadata check does not establish a paid contract or completed delivery.</p>
+      </section>
+      <aside class="agent-column" aria-label="Evidence check">
+        <div class="agent-panel"><div class="agent-title"><span class="agent-symbol">✳</span><div><p class="eyebrow">YOUR EVIDENCE ASSISTANT</p><h2>Ask about the records.</h2></div></div>
+          <form id="agent-form"><label for="question">What would you like to check?</label><textarea id="question" rows="4" maxlength="1200" required minlength="5"></textarea>
+            <div class="question-options"><button type="button" data-preset="availability">Check available content</button><button type="button" data-preset="publishers">Compare publishers</button><button type="button" data-preset="sales">Can we rank sales?</button></div>
+            <button type="submit" id="run-button" class="primary wide">Run agent <span>↗</span></button>
+          </form>
+          <button type="button" class="example-button" id="example-button">Or explore a saved real run →</button>
+          <p class="model-note">Live Vertex AI · read-only tools · your review</p>
+        </div>
+        <div id="progress-panel" class="progress-panel" hidden><p class="eyebrow">CHECK IN PROGRESS</p><div id="progress" role="status" aria-live="polite"></div></div>
+        <p id="error" class="error" role="alert" hidden></p>
+        <div class="expected"><h3>A useful report tells you</h3><p><span>↗</span> What the sources actually show.</p><p><span>↗</span> What needs a human follow-up.</p><p><span>↗</span> What this data cannot answer.</p></div>
+      </aside>
+    </div>
+    <section id="report-section" class="report-section" aria-label="Agent report" hidden></section>
+    <details class="how-it-works"><summary>How this demo works <span>Sources, tools & limits</span></summary><div class="how-grid"><div><h3>The data</h3><p>Public NeoReach campaign pages provide the brief and selected video links. YouTube oEmbed returns public title and publisher metadata. The first screen is a dated research snapshot; a live check is labeled separately.</p></div><div><h3>The agent</h3><p>Vertex AI chooses read-only tools in a LangGraph loop. SQLite keeps the campaign and content records aligned. Citation IDs and a separate model assessment check the draft before your review.</p></div><div><h3>Your review</h3><p>You can approve the report or mark it for follow-up. This is a demo reviewer role, scoped to this browser. Reviews are saved on the server. No email is sent and no real campaign system is changed.</p></div></div><p>We have no contracts, deadlines, payments, sales or private analytics. No video playback or content-quality verification is performed. No affiliation with NeoReach or NVIDIA.</p></details>
+  </main>
+  <footer><span>CAMPAIGN DESK / A working portfolio prototype</span><span>Public sources. Traceable answers. Human decisions.</span></footer>
+</body>
+</html>
